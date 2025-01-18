@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    font-size: 16px;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--light-pink);
+}
+
+.container {
+    display: block;
+    background-color: var(--white);
+    margin: 50px auto;
+    margin-top: 150px;
+    min-height: 70vh;
+    max-width: 600px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;;
+}
+
+.faqs {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.faqs h1 {
+    font-size: 50px;
+    color: var(--dark-purple);
+}
+
+.star {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.minium {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.minium h2 {
+    font-size: 18px;
+    color: var(--dark-purple);
+    margin-left: 2rem;
+}
+
+.minium img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.text {
+    font-size: 16px;
+    width: 520px;
+    margin-left: 2rem;
+    color: var(--grayish-purple);
+    margin-bottom: 3rem;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 2rem;
+    color: var(--dark-purple);
+    
+}
+
+.topics-tetx {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.topics-icon {
+    display: flex;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.answer {
+    margin-top: -2rem;
+    font-size: 17px;
+    color: var(--grayish-purple);
+    padding: 0 2rem 1rem 2rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 345px) and (max-width: 796px){
+    body{
+        background-image: url(assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 50px auto;
+        padding-top: 2rem;
+    }
+
+    .container {
+        width: 500px;
+        min-height: 100vh;
+    }
+
+    .minium h2{
+        font-size: 26px;
+    }
+
+    .minium img {
+        width: 15%;
+    }
+
+    .text {
+        font-size: 22px;
+        width: 430px;
+    }
+
+    .topics-tetx {
+        font-size: 18px;
+        
+    }
+
+    .topics img {
+        width: 40px;
+        justify-content: space-between;
+    }
+
+    .answer {
+        font-size: 22px;
+    }
+}
+
